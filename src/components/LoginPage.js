@@ -1,33 +1,37 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import './LoginPage.css';
-// import route dom
 
+const LoginPage = ({ onLogin }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-
-const LoginPage = () => {
-    const history = useNavigate();
-  
-    const handleLogin = () => {
-      // Perform login logic here (e.g., authentication)
-      history.push('/dashboard');
-    };
-
-
+  const handleLogin = () => {
+    onLogin(username, password);
+  };
 
   return (
     <div className="login-page">
       <div className="login-left">
         <div className="logo">ELITE AIR</div>
-        <input type="text" placeholder="Enter Admin Name" className="input-field" />
-        <input type="password" placeholder="Enter Admin password" className="input-field" />
-        <button className="login-button">Login</button>
+        <input 
+          type="text" 
+          placeholder="Enter Your Name Please" 
+          className="input-field" 
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input 
+          type="password" 
+          placeholder="Enter Your Password please" 
+          className="input-field" 
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button className="login-button" onClick={handleLogin}>Login</button>
       </div>
       <div className="login-right">
-      <video className="login-video" autoPlay muted loop>
-
-          {/* <source src="/assets/login video.mp4" type="video/mp4" /> */}
-          
+        <video className="login-video" autoPlay muted loop>
+          <source src="/assets/login video.mp4" type="video/mp4" /> 
         </video>
       </div>
     </div>
@@ -38,4 +42,38 @@ export default LoginPage;
 
 
 
-// un comment the video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

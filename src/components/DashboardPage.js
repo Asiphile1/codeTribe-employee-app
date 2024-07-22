@@ -1,55 +1,101 @@
+import React, { useState } from 'react';
+import './Dashboard.css';
 
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDelete, onUpdate }) => {
+  const [searchQuery, setSearchQuery] = useState('');
 
-const DashboardPage = () => {
-  const navigate = useNavigate();
-
-  const goToFormPage = () => {
-    navigate('/form');
-  };
+  const filteredEmployees = employees.filter(employee =>
+    employee.id.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <button onClick={goToFormPage}>Go to Form Page</button>
+    <div className="dashboard">
+      <nav className="navbar">
+        <div className="logo">ELITE AIR</div>
+        <div className="nav-buttons">
+          <button className="nav-button" onClick={onAddNewEmployee}>Add New Employee</button>
+          <button className="nav-button" onClick={onLogout}>Logout</button>
+        </div>
+      </nav>
+      <div className="hero-section">
+        <div className="hero-content">
+          <h1>Welcome to the Dashboard</h1>
+          <p>Manage your employees effectively</p>
+        </div>
+      </div>
+      <div className="search-section">
+        <input 
+          type="text" 
+          placeholder="Search for Employee by ID" 
+          value={searchQuery} 
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="search-input"
+        />
+        <button className="search-button">Go</button>
+      </div>
+      <div className="dashboard-content">
+        <div className="employee-table">
+          <h2>Current Employees</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredEmployees.map(employee => (
+                <tr key={employee.id}>
+                  <td>{employee.id}</td>
+                  <td>{employee.name}</td>
+                  <td>{employee.email}</td>
+                  <td>{employee.phone}</td>
+                  <td>{employee.position}</td>
+                  <td>
+                    <button onClick={() => onUpdate(employee)}>Edit</button>
+                    <button onClick={() => onDelete(employee.id)}>Delete</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="employee-table">
+          <h2>Past Employees</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pastEmployees.map(employee => (
+                <tr key={employee.id}>
+                  <td>{employee.id}</td>
+                  <td>{employee.name}</td>
+                  <td>{employee.email}</td>
+                  <td>{employee.phone}</td>
+                  <td>{employee.position}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <footer className="dashboard-footer">
+        <p>For any inquiries, contact Asiphlie Mthethwa <a href="mailto:asiphilemthethwa@gmail.com">Email me here</a></p>
+      </footer>
     </div>
   );
 };
 
-export default DashboardPage;
+export default Dashboard;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const Navbar = () => {
-//     return ( 
-//         <nav className="navbar">
-//             <h1>start with this page</h1>
-//             <div className="links">
-//                 <a href="/">Home</a>
-//                 <a href="/create">Add New Employee</a>
-            
-//             </div>
-
-//         </nav>
-//      );
-// }
- 
-// export default Navbar;
