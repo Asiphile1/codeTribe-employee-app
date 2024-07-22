@@ -1,13 +1,15 @@
 ![UPDATED APP SKETCH2](https://github.com/user-attachments/assets/2f3d7c0c-4491-49b9-a04c-acb6ab6236d1)
-
-
-
-
-
-
-
-
-
+![Screenshot (17)](https://github.com/user-attachments/assets/6a9ef953-9bd7-4cb2-bc13-a823c200badf)
+![Screenshot (18)](https://github.com/user-attachments/assets/cca4ceaf-2a4e-4ced-b77d-319ec4700ddb)
+![Screenshot (19)](https://github.com/user-attachments/assets/96238fe9-a4f6-4702-85cf-eb47b4a46946)
+![Screenshot (20)](https://github.com/user-attachments/assets/36911dd5-f4df-4b69-bbf3-ad2d3aca8075)
+![Screenshot (21)](https://github.com/user-attachments/assets/84025f9c-04e7-4ab5-8074-368e04230b15)
+![Screenshot (22)](https://github.com/user-attachments/assets/35988fbb-f09c-4e2e-af4c-f0dc49701524)
+![Screenshot (23)](https://github.com/user-attachments/assets/9c75d3cf-f6b1-40d8-8473-f4ccbd1ee802)
+![Screenshot (24)](https://github.com/user-attachments/assets/0845e0e3-d3c9-4061-a808-fa6a1dee92c8)
+![Screenshot (25)](https://github.com/user-attachments/assets/0ddd3dc3-5020-424f-a6b9-45c3febd5f4e)
+![Screenshot (26)](https://github.com/user-attachments/assets/d89ab898-f3aa-4a49-a64e-6267fe60d5f9)
+![Screenshot (27)](https://github.com/user-attachments/assets/7f593129-a538-4815-aa8c-b2b8acc348c0)
 
 # Getting Started with Create React App
 
