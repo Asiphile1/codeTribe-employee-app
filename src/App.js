@@ -116,24 +116,6 @@ export default App;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // do not need to import react from version 17 going upwards.
 // import './App.css';
 // // import Navbar from './components/Navbar';  

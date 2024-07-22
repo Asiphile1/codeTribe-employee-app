@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import './Dashboard.css';
 
@@ -100,4 +98,3 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
 };
 
 export default Dashboard;
-
