@@ -6,6 +6,11 @@ Description
 The Employee Management App is a simple and user-friendly React application designed to manage employee information. It allows users to add new employees, update existing employee details, and view employee information. The app uses local storage to persist data, ensuring that employee information is retained even after the page is refreshed.
 
 
+Login Creadentials
+
+UserName: Asiphile
+Password: 4444
+
 
 Features
 
