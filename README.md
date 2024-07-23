@@ -29,7 +29,7 @@ Local Storage: Web storage used for saving employee data persistently.
 
 
 
-How to Run the Project
+
 
 Prerequisites
 
