@@ -83,3 +83,35 @@ This project is licensed under the MIT License.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# The Employee Registration Activity needed to satisfy  the following requirements:
+
+
+Search Function: Users can search for employees by ID.
+
+Add Function: Users can add a new employee with the following details:
+Name
+Email Address
+Phone Number
+Image
+Position
+ID
+
+Delete Function: Users can delete existing employees.
+
+Update Function: Users can edit existing employee details.
+
+Local Storage: Use arrays to store the list of employees in local storage.
+
+View existing employees.
+
+View employees who left the organisations.
+
+General Requirements for Both Applications:
+
+Implement CRUD (Create, Read, Update, Delete) operations for bookmarks/employees.
+
+Ensure that the app is responsive.
+
+Provide a sketch or mockup using any platform you are comfortable with, such as Figma, free-hand on paper,
+
