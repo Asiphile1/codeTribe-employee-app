@@ -44,6 +44,7 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Position</th>
+                <th>Image</th> 
                 <th>Actions</th>
               </tr>
             </thead>
@@ -55,6 +56,13 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
                   <td>{employee.email}</td>
                   <td>{employee.phone}</td>
                   <td>{employee.position}</td>
+                  <td>
+        {employee.image ? (
+          <img src={employee.image} alt={`${employee.name}'s Image`} style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '5px' }} />
+        ) : (
+          <span>No Image</span>
+        )}
+      </td>
                   <td>
                     <button onClick={() => onUpdate(employee)}>Edit</button>
                     <button onClick={() => onDelete(employee.id)}>Delete</button>
