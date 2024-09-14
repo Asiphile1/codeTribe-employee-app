@@ -62,7 +62,7 @@ License This project is licensed under the MIT License.
 ![Screenshot (27)](https://github.com/user-attachments/assets/7f593129-a538-4815-aa8c-b2b8acc348c0)
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 
 # The Employee Registration Activity needed to satisfy  the following requirements:
