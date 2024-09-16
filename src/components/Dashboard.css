@@ -130,7 +130,65 @@
   .employee-table {
     width: 45%;
   }
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .nav-buttons {
+    gap: 20px;
+  }
 }
+
+
+@media (min-width: 1024px) {
+  .hero-section {
+    height: 600px;
+  }
+
+  .search-section {
+    justify-content: flex-start;
+  }
+
+  .search-input {
+    max-width: 400px;
+  }
+
+  .nav-button {
+    padding: 12px 25px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
+
+  .dashboard-content {
+    padding: 10px;
+  }
+
+  .employee-table {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+}
+
 
 
 

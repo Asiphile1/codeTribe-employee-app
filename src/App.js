@@ -27,7 +27,7 @@ const App = () => {
   }, [pastEmployees]);
 
   const handleLogin = (username, password) => {
-    // this will be the my login details
+    // this will be my login details
     const validUsername = 'Asiphile';
     const validPassword = '4444';
 
