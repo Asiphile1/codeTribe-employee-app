@@ -43,11 +43,10 @@ Add Employee: Fill out a form to add new employees with their name, email, phone
 * Employee List View: Add a page to view a list of all employees.
 * Advanced Form Validation: Enhance form validation for better data integrity.
 
-## Contribution
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to create an issue or submit a pull request.
+# NOTE: IF YOU GET THE ERROR BELOW IT MEANS THAT YOUR LOCAL STORAGE IS FULL!!
 
 
+## SCREENSHOTS
 
 ![UPDATED APP SKETCH2](https://github.com/user-attachments/assets/2f3d7c0c-4491-49b9-a04c-acb6ab6236d1)
 ![Screenshot (17)](https://github.com/user-attachments/assets/6a9ef953-9bd7-4cb2-bc13-a823c200badf)
