@@ -50,7 +50,7 @@ Add Employee: Fill out a form to add new employees with their name, email, phone
 
 ![ERROR CODE EXLANATION](https://github.com/user-attachments/assets/c9aefb5e-d521-4cbf-b343-5d5df44aa727)
 
-## SCREENSHOTS
+## PROJECT SCREENSHOTS
 
 ![UPDATED APP SKETCH2](https://github.com/user-attachments/assets/2f3d7c0c-4491-49b9-a04c-acb6ab6236d1)
 ![Screenshot (17)](https://github.com/user-attachments/assets/6a9ef953-9bd7-4cb2-bc13-a823c200badf)
