@@ -13,8 +13,12 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
       <nav className="navbar">
         <div className="logo">ELITE AIR</div>
         <div className="nav-buttons">
-          <button className="nav-button" onClick={onAddNewEmployee}>Add New Employee</button>
-          <button className="nav-button" onClick={onLogout}>Logout</button>
+          <button className="nav-button" onClick={onAddNewEmployee}>
+            Add New Employee
+          </button>
+          <button className="nav-button" onClick={onLogout}>
+            Logout
+          </button>
         </div>
       </nav>
       <div className="hero-section">
@@ -24,10 +28,10 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
         </div>
       </div>
       <div className="search-section">
-        <input 
-          type="text" 
-          placeholder="Search for Employee by ID" 
-          value={searchQuery} 
+        <input
+          type="text"
+          placeholder="Search for Employee by ID"
+          value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="search-input"
         />
@@ -44,12 +48,12 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Position</th>
-                <th>Image</th> 
+                <th>Image</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              {filteredEmployees.map(employee => (
+              {filteredEmployees.map((employee) => (
                 <tr key={employee.id}>
                   <td>{employee.id}</td>
                   <td>{employee.name}</td>
@@ -57,15 +61,26 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
                   <td>{employee.phone}</td>
                   <td>{employee.position}</td>
                   <td>
-        {employee.image ? (
-          <img src={employee.image} alt={`${employee.name}'s Image`} style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '5px' }} />
-        ) : (
-          <span>No Image</span>
-        )}
-      </td>
+                    {employee.image ? (
+                      <img
+                        src={employee.image}
+                        alt={employee.name}
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          objectFit: "cover",
+                          borderRadius: "5px",
+                        }}
+                      />
+                    ) : (
+                      <span>No Image</span>
+                    )}
+                  </td>
                   <td>
                     <button onClick={() => onUpdate(employee)}>Edit</button>
-                    <button onClick={() => onDelete(employee.id)}>Delete</button>
+                    <button onClick={() => onDelete(employee.id)}>
+                      Delete
+                    </button>
                   </td>
                 </tr>
               ))}
@@ -85,7 +100,7 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
               </tr>
             </thead>
             <tbody>
-              {pastEmployees.map(employee => (
+              {pastEmployees.map((employee) => (
                 <tr key={employee.id}>
                   <td>{employee.id}</td>
                   <td>{employee.name}</td>
@@ -99,7 +114,10 @@ const Dashboard = ({ employees, pastEmployees, onAddNewEmployee, onLogout, onDel
         </div>
       </div>
       <footer className="dashboard-footer">
-        <p>For any inquiries, contact Asiphlie Mthethwa <a href="mailto:asiphilemthethwa@gmail.com">Email me here</a></p>
+        <p>
+          For any inquiries, contact Asiphlie Mthethwa{" "}
+          <a href="mailto:asiphilemthethwa@gmail.com">Email me here</a>
+        </p>
       </footer>
     </div>
   );
