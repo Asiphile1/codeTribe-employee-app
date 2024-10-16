@@ -43,8 +43,12 @@ Add Employee: Fill out a form to add new employees with their name, email, phone
 * Employee List View: Add a page to view a list of all employees.
 * Advanced Form Validation: Enhance form validation for better data integrity.
 
-# NOTE: IF YOU GET THE ERROR BELOW IT MEANS THAT YOUR LOCAL STORAGE IS FULL!!
+# NOTE: IF YOU GET THE ERROR BELOW IT MEANS THAT YOUR PERSONAL LOCAL STORAGE IS FULL!!
+![Screenshot (27)](https://github.com/user-attachments/assets/fb569760-081b-4631-8e2f-6eb5504a081b)
 
+## EXPLANATION
+
+![ERROR CODE EXLANATION](https://github.com/user-attachments/assets/c9aefb5e-d521-4cbf-b343-5d5df44aa727)
 
 ## SCREENSHOTS
 
