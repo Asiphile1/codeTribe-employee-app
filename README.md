@@ -10,7 +10,7 @@ The Employee Management App is a simple and user-friendly React application desi
 
 * Password: 4444
 
-* Deployment site:
+* Deployment site: https://code-tribe-employee-app.vercel.app/
 
 
 ## Features
