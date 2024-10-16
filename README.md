@@ -1,51 +1,52 @@
 # Employee Management App
 
-Description
+## Description
 
 The Employee Management App is a simple and user-friendly React application designed to manage employee information. It allows users to add new employees, update existing employee details, and view employee information. The app uses local storage to persist data, ensuring that employee information is retained even after the page is refreshed.
 
-Login Creadentials
+* Login Creadentials
 
-UserName: Asiphile
+* UserName: Asiphile
 
-Password: 4444
+* Password: 4444
 
-Deployment site:
+* Deployment site:
 
 
-Features
+## Features
 
 Add Employee: Fill out a form to add new employees with their name, email, phone number, position, ID, and a profile picture. Update Employee: Edit the details of an existing employee using the same form. Employee Image Preview: Upload an image for the employee and see a preview before saving. Local Storage: Employee data is saved to local storage to retain information between sessions.
 
-Technologies Used
+## Technologies Used
 
-React: A JavaScript library for building user interfaces.
+* React: A JavaScript library for building user interfaces.
 
-JavaScript: The programming language used for the app's logic.
+* JavaScript: The programming language used for the app's logic.
 
-HTML: The markup language used for structuring the app's content.
+* HTML: The markup language used for structuring the app's content.
 
-CSS: The stylesheet language used for styling the app.
+* CSS: The stylesheet language used for styling the app.
 
-Local Storage: Web storage used for saving employee data persistently.
+* Local Storage: Web storage used for saving employee data persistently.
 
-Prerequisites
+## Project Structure
 
-Node.js installed on your machine. npm (Node Package Manager) installed.
+* src: Contains the source code of the application. 
+* components: Contains React components.
+* FormPage.js: The main component for the employee form.
+* App.js: The root component of the app.
+* index.js: The entry point of the app.
+* public: Contains the public assets and the index.html file.
 
-Project Structure
+## Future Improvements
 
-src: Contains the source code of the application. components: Contains React components. FormPage.js: The main component for the employee form. App.js: The root component of the app. index.js: The entry point of the app. public: Contains the public assets and the index.html file.
+* Employee List View: Add a page to view a list of all employees.
+* Advanced Form Validation: Enhance form validation for better data integrity.
 
-Future Improvements
-
-Employee List View: Add a page to view a list of all employees. Advanced Form Validation: Enhance form validation for better data integrity.
-
-Contribution
+## Contribution
 
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to create an issue or submit a pull request.
 
-License This project is licensed under the MIT License.
 
 
 ![UPDATED APP SKETCH2](https://github.com/user-attachments/assets/2f3d7c0c-4491-49b9-a04c-acb6ab6236d1)
